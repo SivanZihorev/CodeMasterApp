@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "2940624297",
+    "firebase_url": "https://codelearnapp-default-rtdb.firebaseio.com",
+    "project_id": "codelearnapp",
+    "storage_bucket": "codelearnapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2940624297:android:1f0e953abdd72a78e478b8",
+        "android_client_info": {
+          "package_name": "com.example.bottomnavyt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBENv7oPJfCp_1JolkYPgHu_pt92lPxeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2940624297:android:cfe375455d809e2fe478b8",
+        "android_client_info": {
+          "package_name": "com.example.codelearnapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBENv7oPJfCp_1JolkYPgHu_pt92lPxeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2940624297:android:26b122bcadceaa07e478b8",
+        "android_client_info": {
+          "package_name": "com.example.codeleranapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBENv7oPJfCp_1JolkYPgHu_pt92lPxeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2940624297:android:c6f037ca081a6521e478b8",
+        "android_client_info": {
+          "package_name": "com.example.codemasterapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBENv7oPJfCp_1JolkYPgHu_pt92lPxeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2940624297:android:ac390362e9b7a702e478b8",
+        "android_client_info": {
+          "package_name": "com.example.cosemasterapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBENv7oPJfCp_1JolkYPgHu_pt92lPxeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2940624297:android:241270a4a7cbbd4ee478b8",
+        "android_client_info": {
+          "package_name": "np.com.bimalkafle.quizonline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBENv7oPJfCp_1JolkYPgHu_pt92lPxeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
