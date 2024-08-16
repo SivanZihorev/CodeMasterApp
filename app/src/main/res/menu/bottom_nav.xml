@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:title="Home"
+        android:id="@+id/Courses"
+        android:icon="@drawable/icon_home"/>
     <item android:title="Quiz Time"
         android:id="@+id/QuizTime"
         android:icon="@drawable/icon_quiz"/>
     <item android:title="Temp1"
         android:id="@+id/Temp1"
-        android:icon="@drawable/icon_temp"/>
-    <item android:title="Temp2"
-        android:id="@+id/Temp2"
         android:icon="@drawable/icon_temp"/>
 </menu>

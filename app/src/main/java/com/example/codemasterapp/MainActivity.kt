@@ -1,10 +1,7 @@
 package com.example.codemasterapp
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.codemasterapp.Quiz.QuizPage
 import com.example.codemasterapp.databinding.ActivityMainBinding
@@ -25,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.QuizTime -> replaceFragment(QuizPage())
                 R.id.Temp1 -> replaceFragment(Temp1())
-                R.id.Temp2 -> replaceFragment(Temp2())
+                R.id.Courses -> replaceFragment(CoursesPageFragment())
 
                 else ->{
 
