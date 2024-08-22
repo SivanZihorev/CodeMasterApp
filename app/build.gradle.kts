@@ -18,6 +18,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -50,6 +54,8 @@ dependencies {
     implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.database)
     implementation(libs.cronet.embedded)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -59,5 +65,13 @@ dependencies {
     implementation (libs.kotlinx.coroutines.android)
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
+    // Declare the dependency for the firebase aithentication library
+    implementation("com.google.firebase:firebase-auth-ktx:23.0.0")
+
+    //Declare the dependency for the Google Play Services library and specify its version
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation (libs.firebase.storage)
+    implementation (libs.firebase.database.v2009)
 
 }

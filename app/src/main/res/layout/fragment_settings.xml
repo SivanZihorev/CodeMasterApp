@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SettingsPageFragment"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/circular_bg"
+        android:backgroundTint="@color/lilacpurple"
+        android:src="@drawable/person_icon"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/profile_image_view"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_rounded_corner"
+       android:elevation="5dp"
+        android:id="@+id/profile_username"
+    android:minHeight="48dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Phone"
+    android:inputType="text"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/edit_text_rounded_corner"
+    android:elevation="5dp"
+    android:id="@+id/profile_phone"
+    android:minHeight="48dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:id="@+id/profile_email"
+        android:minHeight="48dp"
+        android:enabled="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+    android:background="@drawable/btn_rounded_corner"
+    android:text="Update profile"
+    android:id="@+id/profle_update_btn"
+    android:minHeight="48dp" />
+
+
+</LinearLayout>
+
+
+    </LinearLayout>

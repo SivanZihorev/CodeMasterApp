@@ -15,8 +15,10 @@ import kotlinx.coroutines.launch
 
 
 class VideoPlayerFragment : Fragment() {
+
     private lateinit var resultTextView: TextView
     private lateinit var youtubeWebView: WebView
+    private lateinit var descriptionTextView: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,30 +27,37 @@ class VideoPlayerFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_video_player, container, false)
 
+        // Initialize UI components
         resultTextView = view.findViewById(R.id.result_text_view)
         youtubeWebView = view.findViewById(R.id.youtube_webview)
+        descriptionTextView = view.findViewById(R.id.description_text_view)
 
-        fetchVideoDetails()
+        // Get video ID from arguments and fetch video details
+        val videoId = arguments?.getString("videoId")
+        videoId?.let { fetchVideoDetails(it) }
 
         return view
     }
 
-    private fun fetchVideoDetails() {
+    private fun fetchVideoDetails(videoId: String) {
         val apiKey = "AIzaSyADXOd1UVu2nDBvrTRZl1h3EUl-j4x_3W8"
-        val videoId = "XV7ow8VUSxU"
 
         GlobalScope.launch(Dispatchers.Main) {
             try {
+                // Fetch video details using Retrofit
                 val response = RetrofitInstance.api.getVideoDetails("snippet", videoId, apiKey)
                 if (response.isSuccessful) {
                     val videoItem = response.body()?.items?.firstOrNull()
                     val title = videoItem?.snippet?.title
+                    val description = videoItem?.snippet?.description // Get video description
+
                     resultTextView.text = title ?: "No title found"
+                    descriptionTextView.text = description ?: "No description found" // Set description
 
                     // Display the video
-                    val videoUrl = "https://www.youtube.com/watch?v=$videoId"
+                    val videoUrl = "https://www.youtube.com/embed/$videoId"
                     youtubeWebView.settings.javaScriptEnabled = true
-                    youtubeWebView.loadUrl("https://www.youtube.com/embed/$videoId")
+                    youtubeWebView.loadUrl(videoUrl)
                     youtubeWebView.visibility = View.VISIBLE
                 } else {
                     resultTextView.text = "API call failed. Status code: ${response.code()}"

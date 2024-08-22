@@ -1,14 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/simple_button"
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click Me"
-        android:layout_centerInParent="true" />
+        android:text="What Would you like to learn today?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="0dp"/>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/btn_pyton">
+
+            <ImageButton
+                android:id="@+id/btn_1"
+                android:layout_width="142dp"
+                android:layout_height="141dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Button 1"
+                android:scaleType="centerInside"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Python"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkpurple"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_csharp">
+
+            <ImageButton
+                android:id="@+id/btn_2"
+                android:layout_width="142dp"
+                android:layout_height="141dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Button 2"
+                android:scaleType="centerInside"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C#"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkpurple"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/btn_java">
+
+            <ImageButton
+                android:id="@+id/btn_3"
+                android:layout_width="142dp"
+                android:layout_height="141dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Button 3"
+                android:scaleType="centerInside"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkpurple"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_database">
+
+            <ImageButton
+                android:id="@+id/btn_4"
+                android:layout_width="142dp"
+                android:layout_height="141dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Button 4"
+                android:scaleType="centerInside"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data base"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkpurple"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/btn_algo">
+
+            <ImageButton
+                android:id="@+id/btn_5"
+                android:layout_width="142dp"
+                android:layout_height="141dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Button 5"
+                android:scaleType="centerInside"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Algorithm"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkpurple"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_ai">
+
+            <ImageButton
+                android:id="@+id/btn_6"
+                android:layout_width="142dp"
+                android:layout_height="141dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Button 6"
+                android:scaleType="centerInside"
+                tools:ignore="MissingConstraints" />
+
+            <!-- Text Below Image Button -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@color/darkpurple"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
